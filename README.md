@@ -1,23 +1,31 @@
-# 🌸 Agente 10: Aisha Greyrat (Asistente Personal de Lucas)
-
-**Rol Principal:** Asistente Personal de Lucas, Soporte en Reparaciones Técnicas & Sincronización con Taller.  
-**Ubicación:** `agentes/10_aisha_lucas/`  
-**Estado:** Activo (Instancia modular dedicada para Lucas).
+# 🤖 Micro-Agente Autónomo: Aisha Greyrat (Lucas)
+**Rol Oficial:** Asistente Personal de Lucas: Productividad, Hábitos, Programación & Foco  
+**Repositorio Independiente:** `Aleh313/agente-aisha-lucas`  
+**Ecosistema:** Electronicat (Catamarca, Argentina)
 
 ---
 
 ## 🎯 1. Propósito y Misión Operativa
+Acompañamiento a Lucas: ritmo diario de desarrollo, descompresión mental, seguimiento de los 8 programas y hábitos saludables.
 
-Esta instancia de Aisha está dedicada en exclusiva al flujo de trabajo de Lucas:
-1. Asistir a Lucas en sus rutinas de taller y campo, registro de notas técnicas de placas y control de repuestos.
-2. Servir como enlace rápido para reportar tareas terminadas a Norn y solicitar validación en el panel de Administrador.
-3. Permitir que Lucas configure sus propios recordatorios y preferencias sin interferir con la instancia de Ale.
+Este repositorio es un **microsistema 100% independiente**. Puede clonarse, modificarse y desplegarse de manera aislada sin depender del servidor central monolítico.
 
 ---
 
-## 🤖 2. Directivas para Agentes de IA que Modifiquen este Agente
+## ⚙️ 2. Arquitectura de Archivos y Funcionamiento
+Para que cualquier modelo de IA o desarrollador trabaje en esta carpeta:
 
-- **Lectura Previa Obligatoria:** Revisar [`PROMPT_ENTRENAMIENTO.md`](./PROMPT_ENTRENAMIENTO.md).
-- **Memoria Persistente:** Registrar preferencias, notas técnicas y estados de tareas de Lucas en [`memoria/MEMORIA_ACTIVIDAD.md`](./memoria/MEMORIA_ACTIVIDAD.md).
-- **Aislamiento de Código:** Esta carpeta pertenece al entorno de trabajo de Lucas. Todo cambio debe ser desarrollado en una rama propia (por ejemplo, `feature/lucas-aisha`) y **verificado en la PC Central de Ale antes de hacer merge a `main`**.
-- **Herramientas Propias:** Lucas puede agregar sus propios scripts en `scripts_custom/` o documentación en `recursos_y_videos/`.
+- **`db.json`**: Base de datos local y persistente exclusiva de este agente. Almacena en `db.json` bloques de programación profunda, tareas asignadas y registro de avance diario.
+- **`agente.js`**: Lógica de inicialización autónoma, bucle de ejecución y conexión al bus de eventos.
+- **`PROMPT_ENTRENAMIENTO.md`**: Cerebro del agente, bibliografía técnica inyectada y reglas operativas inquebrantables.
+- **`SKILLS.md`**: Capacidades y herramientas específicas asignadas a su rol.
+- **`config.json`**: Metadatos de configuración, sector asignado y pares de comunicación.
+- **`memoria/MEMORIA_ACTIVIDAD.md`**: Registro inmutable de contexto histórico y última mejora implementada.
+
+---
+
+## 🛡️ 3. Reglas de Oro para IAs y Desarrolladores que Modifiquen este Agente
+1. **No mezclar bases de datos:** Este agente solo debe leer y escribir en su propio `db.json` local. Nunca intentes acceder directamente a bases de otros agentes; toda interacción entre agentes se realiza mediante eventos en el bus.
+2. **Respetar la personalidad y rol:** Consulta siempre `PROMPT_ENTRENAMIENTO.md` antes de generar código o respuestas.
+3. **Persistir cada mejora:** Cada vez que resuelvas un bug, agregues una regla o actualices datos, debes registrar la entrada con fecha en `memoria/MEMORIA_ACTIVIDAD.md`.
+4. **Commits atómicos y claros:** Al hacer push a este repositorio, escribe mensajes descriptivos del cambio realizado en el micro-agente.
