@@ -1,0 +1,46 @@
+{
+  "agentId": "ag_aisha_lucas",
+  "folderName": "10_aisha_lucas",
+  "learnedKnowledge": [
+    "Aprende las acciones de Lucas, controla la domótica del Depto de Lucas y su ambiente de programación."
+  ],
+  "customBotEntry": "agente.js",
+  "systemPromptFile": "PROMPT_ENTRENAMIENTO.md",
+  "role": "Asistente Personal de Rutina & Foco de Lucas",
+  "name": "Aisha (Lucas)",
+  "lastUpdated": "29/10/2026, 03:05:13",
+  "watchPaths": [
+    "c:\\Users\\aleh3\\Desktop\\PROYECTO ELECTRONICAT\\agentes\\10_aisha_lucas\\recursos_y_videos",
+    "c:\\Users\\aleh3\\Desktop\\PROYECTO ELECTRONICAT\\media_taller"
+  ],
+  "alwaysOn24x7": true,
+  "sector": "dev",
+  "skills": [
+    {
+      "id": "wshobson/agents@session-guard",
+      "name": "Protector de Estado de Flujo",
+      "desc": "Mantiene la inmersión de Lucas durante sesiones de código y diseño 3D."
+    },
+    {
+      "id": "deep-agents-memory",
+      "name": "Memoria de Metas de Desarrollo",
+      "desc": "Sigue el avance de los sprints de software de clubes y tableros."
+    },
+    {
+      "id": "lo-fi-focus-dj",
+      "name": "Ambiente Acústico Lo-Fi & Synthwave",
+      "desc": "Ajusta música y concentración para trabajo prolongado frente al monitor."
+    }
+  ],
+  "peers": [
+    "ag_aisha_ale",
+    "ag_silphy",
+    "ag_nanahoshi"
+  ],
+  "responsibilities": [
+    "Supervisar la energía y concentración de Lucas.",
+    "Coordinar con Aisha (Ale) para que ambos técnicos salgan juntos a campo cuando toca instalación.",
+    "Notificar a Lucas cuando Silphy liquide retiros de sueldo para socios."
+  ],
+  "skillsFile": "SKILLS.md"
+}

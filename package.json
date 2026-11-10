@@ -1,0 +1,11 @@
+{
+  "name": "agente-aisha-lucas",
+  "version": "1.0.0",
+  "description": "Micro-asistente Aisha Lucas: Productividad, Hábitos, Programación y Foco Diario",
+  "main": "agente.js",
+  "scripts": {
+    "start": "node agente.js"
+  },
+  "author": "Ale & Lucas - Electronicat",
+  "license": "ISC"
+}
